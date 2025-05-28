@@ -67,7 +67,7 @@ Frontend:
 
 React, React Router
 
-API: Perenual API for plant data
+MongoDB
 
 HTTP Requests: Axios (for fetching data)
 Frontend:
@@ -94,9 +94,7 @@ Authentication & Security:
 
 bcrypt – Password hashing
 
-JWT (JSON Web Token) – Token-based authentication
-
-Express-session (if used) – Session management
+Express-session – Session management
 
 Database:
 
@@ -108,22 +106,13 @@ Mongoose – ODM for MongoDB
 ## Documentation
 
 This project is built with clear and well-structured code to help you understand its functionality. The frontend uses React components that handle user interactions, while the backend is powered by Node.js and Express to manage API routes and authentication. User credentials are securely stored with hashing using bcrypt, and JWT is used for session management. The MongoDB database stores user and product data. 
-## Contributing
-
-
-We welcome contributions to this project. Feel free to:
-
-Fork the repository.
-
-Create a new branch (git checkout -b feature-name).
-
-Commit your changes (git commit -am 'Add feature').
-
-Push to the branch (git push origin feature-name).
-
-Create a new Pull Request.
 
 ## API response 
 
 The API returns data in the form of a JSON object that includes the requested information along with relevant metadata such as success status and descriptive messages. This consistent response structure ensures easy handling of data across various endpoints like authentication, product retrieval, and user actions. The frontend can reliably parse these objects to update the UI and provide feedback to users.
+
+## Acknowledgements
+- [Kai Barker](https://github.com/Kai-Barker)
+- [Onthatile Lesufi](https://github.com/Onthatile-Lesufi)
+- [Danae Swart](https://github.com/danaeswart)
 
