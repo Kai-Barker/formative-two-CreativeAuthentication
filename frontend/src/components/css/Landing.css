@@ -1,0 +1,167 @@
+.landing-circle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 5vw;
+  gap: 0;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
+/* Common circle styles */
+.circle {
+  width: 30vw;
+  height: 30vw;
+  border: 1px solid #DDAC7D;
+  border-radius: 50%;
+  background-color: transparent;
+  z-index: 2;
+}
+
+/* Overlap adjustments */
+.circle-left {
+  margin-right: -7vw;
+}
+
+.circle-right {
+  margin-left: -7vw;
+}
+
+/* Center wrapper for middle circle + dotted outline */
+.circle-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Dotted outline around center circle */
+.dotted-outline {
+ position: absolute;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+ 
+  z-index: 1;
+
+  /* Customize the dot length and gap here */
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #ddac7d9b;
+
+
+
+}
+
+.circle-overlay-content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ pointer-events: auto;
+}
+
+.landing-welcome {
+     position: absolute;
+  text-align: center;
+  color: white;
+  pointer-events: auto;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.landing-welcome h1{
+     color: #DDAC7D;
+}
+
+.landing-welcome h2{
+    color: #EE5D02;
+    font-weight: 800;
+    font-size: 400%;
+   
+
+}
+
+.landingPair h1{
+    white-space: nowrap;
+  word-break: keep-all;
+}
+.landingPair{
+    position: absolute;
+  text-align: left;
+  color: white;
+  max-width: 200px;
+  pointer-events: auto;
+}
+
+.landing-1{
+   position: absolute;
+ top: 45%;
+  left: 15%;
+
+}
+.landing-2 {
+    
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.landing-3 {
+  top: 45%;
+  right: 20%;
+}
+/* Container for positioning the button */
+.landing-button-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 100%;
+  height: 6.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+
+/* Button base styling */
+.landing-button-component {
+  height: 100%;
+  width: 40vw; /* or adjust based on desired size */
+  border-radius: 100px;
+  border: 0.15vw solid #EE5D02;
+  background-color: rgba(0, 0, 0, 0);
+  color: #EE5D02;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover effect */
+.button-component:hover {
+  background-color: #DDAC7D;
+  color: black;
+  border-color: #DDAC7D;
+}
+
+/* Optional Bootstrap-based override if you're using Bootstrap */
+.btn-primary {
+  --bs-btn-active-bg: #DDAC7D;
+  --bs-btn-active-color: black;
+  --bs-btn-active-border-color: #DDAC7D;
+}
+
+
